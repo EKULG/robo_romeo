@@ -1,0 +1,63 @@
+# packaging
+pip>=9
+setuptools>=26
+twine
+wheel>=0.29
+
+# data science
+scikit-learn
+tensorflow-macos==2.8.0; sys_platform == 'darwin' and 'ARM' in platform_version
+tensorflow==2.8.0; sys_platform == 'darwin' and 'ARM' not in platform_version
+tensorflow==2.8.0; sys_platform != 'darwin'
+keras
+tqdm
+pandas
+
+
+# tests/linter
+black
+coverage
+flake8
+pytest
+yapf
+
+# API
+gcsfs
+google-cloud-storage
+mlflow
+s3fs
+
+# utilities
+six>=1.14
+joblib
+memoized-property
+termcolor
+python-dotenv
+pickle
+
+# GPT3
+autopep8==1.6.0
+certifi==2021.10.8
+charset-normalizer==2.0.7
+click==8.0.3
+et-xmlfile==1.1.0
+Flask==2.0.2
+idna==3.3
+itsdangerous==2.0.1
+Jinja2==3.0.2
+MarkupSafe==2.0.1
+numpy==1.21.3
+openai==0.11.0
+openpyxl==3.0.9
+pandas==1.3.4
+pandas-stubs==1.2.0.35
+pycodestyle==2.8.0
+python-dateutil==2.8.2
+python-dotenv==0.19.2
+pytz==2021.3
+requests==2.26.0
+six==1.16.0
+toml==0.10.2
+tqdm==4.62.3
+urllib3==1.26.7
+Werkzeug==2.0.2
